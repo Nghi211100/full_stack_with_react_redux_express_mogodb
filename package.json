@@ -1,0 +1,27 @@
+{
+  "name": "full_stack_with_react_redux_express_mogodb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nghi211100/full_stack_with_react_redux_express_mogodb.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nghi211100/full_stack_with_react_redux_express_mogodb/issues"
+  },
+  "homepage": "https://github.com/Nghi211100/full_stack_with_react_redux_express_mogodb#readme",
+  "dependencies": {
+    "concurrently": "^7.2.1",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "mogoose": "0.0.1-security",
+    "nodemon": "^2.0.16"
+  }
+}
