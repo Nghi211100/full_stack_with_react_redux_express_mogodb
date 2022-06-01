@@ -9,7 +9,7 @@ const app = express();
 
 app.unsubscribe(express.json());
 
-app.use("api/product", productRoutes);
+app.use("api/products", productRoutes);
 
 const PORT = process.env.PORT || 5000;
 

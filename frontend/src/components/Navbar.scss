@@ -1,0 +1,101 @@
+.navbar {
+    width: 100%;
+    background: #171717;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 1rem;
+    z-index: 50;
+
+    .navbar__logo {
+        h2 {
+            font-size: 1.4rem;
+            color: white;
+            cursor: pointer;
+        }
+    }
+
+    .navbar__links {
+        display: flex;
+        list-style: none;
+        align-items: center;
+
+        li {
+            padding-left: 1.5rem;
+
+            .cart__link {
+                font-size: 1.2rem;
+                align-items: center;
+                display: flex;
+                background: #333;
+                border-radius: 10px;
+                padding: 10px;
+
+                &:hover {
+                    background: #0fbbe6;
+                }
+
+                span {
+                    display: flex;
+                    align-items: center;
+                    margin-left: 8px;
+
+                    .cartlogo_badge {
+                        width: 30px;
+                        height: 30px;
+                        background: #f4f4f4;
+                        border-radius: 50%;
+                        margin-left: 8px;
+                        color: #171717;
+                        display: flex;
+                        justify-content: center;
+                        text-align: center;
+                        font-size: 1rem;
+                    }
+                }
+            }
+
+        }
+    }
+
+    .hamburger__menu {
+        width: 30px;
+        height: 30px;
+        display: none;
+        align-items: center;
+        text-align: center;
+
+        i {
+            font-size: 30px;
+            width: 100%;
+            color: #f4f4f4;
+        }
+
+        &:hover {
+            cursor: pointer;
+
+            i {
+                color: #0fbbe6;
+            }
+        }
+    }
+}
+
+@mixin responsive_navbar_768() {
+    @media #{"only screen and (max-width: 768px)"} {
+        @content;
+    }
+}
+
+@include responsive_navbar_768() {
+    .navbar {
+        .navbar__links {
+            display: none;
+        }
+
+        .hamburger__menu {
+            display: flex;
+        }
+
+    }
+}

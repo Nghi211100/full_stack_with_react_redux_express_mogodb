@@ -1,0 +1,42 @@
+.cartscreen{
+    margin: 1rem;
+    .cartscreen__list{
+        max-width: 1300px;
+        margin: 1rem auto;
+        display: flex;
+        flex-direction: column;
+        .cartscreen__up{
+            h2{
+                padding-bottom: 1rem;
+            }
+        }
+        .cartscreen__down{
+            width: 100%;
+            padding: 2rem;
+            text-align: end;
+            background: white;
+            box-shadow: 5px 3px 10px rgb(228, 228, 228);
+            .cartscreen__info{
+                p{
+                    font-size: 18px;
+                    padding: 0.5rem;
+                    &:nth-child(2){
+                        font-weight: bold;
+                    }
+                }
+            }
+            .cartscreen__button{
+                button{
+                    padding: 10px 16px;
+                    border-radius: 5px;
+                    background: #191919;
+                    color: white;
+                    border: none;
+                    &:hover{
+                        background: #0fbbe6;
+                    }
+                }
+            }
+        }
+    } 
+}
